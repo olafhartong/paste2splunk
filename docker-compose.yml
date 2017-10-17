@@ -7,7 +7,7 @@ networks:
     driver: bridge
 services:
   paste2splunk:
-    image: "paste2splunk:latest"
+    build: .
     restart: always
     hostname: paste2splunk
     container_name: paste2splunk
